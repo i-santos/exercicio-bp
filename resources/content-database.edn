@@ -1,0 +1,57 @@
+[{:type :course :name "Ideologias Políticas: As Diferentes Correntes", :released-at "2018-11-20T06:46:47.797"}
+ {:type :course :name "Introdução à Escola Austríaca de Economia", :released-at "2018-11-20T06:51:58.899"}
+ {:type :course :name "O Histórico do Pensamento Liberal Brasileiro", :released-at "2018-11-20T06:54:23.595"}
+ {:type :course :name "Carlos Lacerda e a República Brasileira", :released-at "2018-11-21T18:32:53.278"}
+ {:type :course :name "O Que é Capitalismo?", :released-at "2019-01-31T03:24:59.633"}
+ {:type :course :name "Arte, Imaginação e Sentido", :released-at "2019-06-14T18:15:50.853"}
+ {:type :course :name "As Origens do Estado", :released-at "2019-06-17T20:17:14.974"}
+ {:type :course :name "Direito Constitucional", :released-at "2019-06-18T12:24:10.841"}
+ {:type :course :name "Desconstruindo Paulo Freire", :released-at "2019-06-18T12:25:56.180"}
+ {:type :course :name "Linguagem e Filosofia Prática", :released-at "2019-06-18T12:28:15.184"}
+ {:type :course :name "Um Passeio Pela História do Liberalismo", :released-at "2019-06-18T12:28:49.968"}
+ {:type :course :name "Uma Breve História da Rússia", :released-at "2019-06-18T12:29:21.125"}
+ {:type :course :name "Titãs da Civilização Ocidental", :released-at "2019-06-18T12:30:00.564"}
+ {:type :course :name "Elite Cultural e Intelectual", :released-at "2019-06-27T17:47:28.667"}
+ {:type :course :name "Introdução à Política Internacional", :released-at "2019-07-05T13:23:25.452"}
+ {:type :course :name "Mito, Linguagem e Mídia", :released-at "2019-07-26T13:40:36.000"}
+ {:type :course :name "Quatro Modelos de Liberdade Política", :released-at "2019-09-19T19:19:51.107"}
+ {:type :course :name "As 5 Grandes Correntes da Ética no Ocidente", :released-at "2019-10-21T04:20:42.171"}
+ {:type :course :name "História da Música", :released-at "2019-12-05T22:17:04.049"}
+ {:type :course :name "Filosofia Política", :released-at "2019-12-19T21:13:44.558"}
+ {:type :course :name "Fé e Liberdade", :released-at "2020-02-06T22:58:52.080"}
+ {:type :course :name "Fundações do Pensamento Político Brasileiro", :released-at "2020-02-20T21:31:27.592"}
+ {:type :course :name "A Família e a Escola na Educação", :released-at "2020-03-05T22:29:32.256"}
+ {:type :course :name "Formação da Personalidade", :released-at "2020-03-19T22:35:38.272"}
+ {:type :podcast :name "CORINGA - Podcast Cultura Paralela #1", :released-at "2020-03-29T20:02:34.337"}
+ {:type :podcast :name "Democracia em Debate", :released-at "2020-03-29T20:02:34.340"}
+ {:type :podcast :name "INTERESTELAR - Podcast Cultura Paralela #2", :released-at "2020-03-29T20:02:34.343"}
+ {:type :podcast :name "Rap / Funk - Podcast Cultura Paralela #3", :released-at "2020-03-29T20:02:34.345"}
+ {:type :podcast :name "Chernobyl - Podcast Cultura Paralela #4", :released-at "2020-03-29T20:02:34.347"}
+ {:type :podcast :name "O Irlandês - Podcast Cultura Paralela #4", :released-at "2020-03-29T20:02:34.349"}
+ {:type :debate :name "Qual o limite do Respeito?", :released-at "2020-03-29T20:02:34.351"}
+ {:type :debate :name "O que realmente é a felicidade?", :released-at "2020-03-29T20:02:34.353"}
+ {:type :debate :name "Há regras para educar os filhos?", :released-at "2020-03-29T20:02:34.356"}
+ {:type :podcast :name "Dois Papas - Podcast Cultura Paralela #6", :released-at "2020-03-29T20:02:34.363"}
+ {:type :podcast :name "Era uma vez em Hollywood - Podcast Cultura Paralela #7", :released-at "2020-03-29T20:02:34.365"}
+ {:type :podcast :name "1917 - Podcast Cultura Paralela #8", :released-at "2020-03-29T20:02:34.367"}
+ {:type :podcast :name "The Witcher - Podcast Cultura Paralela #9", :released-at "2020-03-29T20:02:34.369"}
+ {:type :series :name "Congresso Brasil Paralelo", :released-at "2019-04-02T02:10:38.606"}
+ {:type :series :name "Brasil - A Última Cruzada", :released-at "2019-07-08T16:37:11.184"}
+ {:type :series :name "O dia depois da eleição", :released-at "2019-02-04T18:32:18.784"}
+ {:type :series :name "O Teatro das Tesouras", :released-at "2019-11-06T12:55:13.907"}
+ {:type :series :name "Insight Brasil Paralelo", :released-at "2019-10-21T23:17:13.331"}
+ {:type :series :name "1964: O Brasil entre Armas e Livros", :released-at "2019-07-24T20:02:34.691"}
+ {:type :series :name "Fórum Brasil a Última Cruzada - Evento 07/09/2019", :released-at "2019-10-25T21:23:39.909"}
+ {:type :series :name "Investigação Paralela", :released-at "2019-11-29T20:16:45.747"}
+ {:type :series :name "Pátria Educadora", :released-at "2020-03-31T02:10:38.606"}
+ {:type :interview :name "Congresso Brasil Paralelo - Rafael Nogueira", :released-at "2019-11-16T21:40:51.579"}
+ {:type :interview :name "Congresso Brasil Paralelo - Adriano Gianturco", :released-at "2019-11-16T21:40:51.581"}
+ {:type :interview :name "Congresso Brasil Paralelo - Alexandre Borges", :released-at "2019-11-16T21:40:51.621"}
+ {:type :interview :name "Congresso Brasil Paralelo - Arthur Moledo do Val", :released-at "2019-11-16T21:40:51.622"}
+ {:type :interview :name "Congresso Brasil Paralelo - Beatriz Kicis", :released-at "2018-08-16T20:14:20.579"}
+ {:type :interview :name "Congresso Brasil Paralelo - Rogerio Chequer", :released-at "2019-01-23T21:04:21.222"}
+ {:type :interview :name "Congresso Brasil Paralelo - Carlos Andreazza", :released-at "2018-08-16T20:12:51.317"}
+ {:type :interview :name "Congresso Brasil Paralelo - Rodrigo gurgel", :released-at "2019-01-24T11:45:57.229"}
+ {:type :interview :name "Congresso Brasil Paralelo - Cláudio Manoel", :released-at "2018-08-16T20:10:55.656"}
+ {:type :patron :name "Relatório Mecenas", :released-at "2020-08-10T20:00:00.656"}
+ {:type :interview :name "Congresso Brasil Paralelo - Ricardo Gomes", :released-at "2019-01-24T11:46:22.811"}]

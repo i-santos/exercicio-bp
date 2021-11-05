@@ -236,4 +236,4 @@
       ; patron released at 2020-08-10
       (is (= false (sub/can-access? mecenas-2018 relatorio-mecenas)))
       (is (= false (sub/can-access? mecenas-2019 relatorio-mecenas)))
-      (is (= false (sub/can-access? mecenas-2020 relatorio-mecenas))))))
+      (is (= true (sub/can-access? mecenas-2020 relatorio-mecenas))))))

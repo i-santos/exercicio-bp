@@ -34,4 +34,5 @@
        (cond
          (= (:type user) :usuario)  (can-usuario-access?  content)
          (= (:type user) :patriota) (can-patriota-access? content)
-         (= (:type user) :premium)  (can-premium-access?  content))))
+         (= (:type user) :premium)  (can-premium-access?  content)
+         (= (:type user) :mecenas)  (can-mecenas-access?  content))))

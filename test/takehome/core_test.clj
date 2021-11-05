@@ -29,7 +29,7 @@
                          :released-at (time/local-date-time "2020-08-10T20:00:00.656")}]
 
   ;;; ROLE: usuario
-  (deftest test-can-usuario-access?
+  (deftest test-can-usuario-role-access?
     (testing
      "if role 'usuario' can access specific content"
       ; series
@@ -46,7 +46,7 @@
       (is (= false (sub/can-usuario-access? relatorio-mecenas)))))
 
   ;;; ROLE: patriota
-  (deftest test-can-patriota-access?
+  (deftest test-can-patriota-role-access?
     (testing "if role 'patriota' can access specific content"
       ; series
       (is (= true (sub/can-patriota-access? brasil-entre-armas-e-livros)))
@@ -62,7 +62,7 @@
       (is (= false (sub/can-patriota-access? relatorio-mecenas)))))
 
   ;;; ROLE: premium
-  (deftest test-can-premium-access?
+  (deftest test-can-premium-role-access?
     (testing "if role 'premium' can access specific content"
       ; series
       (is (= true (sub/can-premium-access? brasil-entre-armas-e-livros)))
@@ -78,7 +78,7 @@
       (is (= false (sub/can-premium-access? relatorio-mecenas)))))
 
   ;;; ROLE: mecenas
-  (deftest test-can-mecenas-access?
+  (deftest test-can-mecenas-role-access?
     (testing "if role 'mecenas' can access specific content"
       ; series
       (is (= true (sub/can-mecenas-access? brasil-entre-armas-e-livros)))

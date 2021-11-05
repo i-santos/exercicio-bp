@@ -22,6 +22,15 @@
       patriota-2020 {:type               :patriota
                      :subscription-start (time/local-date-time "2020-01-01T00:00:00.000")
                      :subscription-end   (time/local-date-time "2021-01-01T00:00:00.000")}
+      premium-2018 {:type               :premium
+                    :subscription-start (time/local-date-time "2018-01-01T00:00:00.000")
+                    :subscription-end   (time/local-date-time "2019-01-01T00:00:00.000")}
+      premium-2019 {:type               :premium
+                    :subscription-start (time/local-date-time "2019-01-01T00:00:00.000")
+                    :subscription-end   (time/local-date-time "2020-01-01T00:00:00.000")}
+      premium-2020 {:type               :premium
+                    :subscription-start (time/local-date-time "2020-01-01T00:00:00.000")
+                    :subscription-end   (time/local-date-time "2021-01-01T00:00:00.000")}
       ; série
       brasil-entre-armas-e-livros {:type :series
                                    :name "1964: O Brasil entre Armas e Livros"

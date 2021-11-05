@@ -1,4 +1,5 @@
-(ns takehome.core)
+(ns takehome.core
+  (:require [java-time :as time]))
 
 (defn can-usuario-access? [content]
   (case (:type content)
@@ -26,4 +27,9 @@
         :patron true
         false)))
 
-
+(defn can-access? [user content]
+  (and (time/before? (:subscription-start user)
+                     (:released-at        content)
+                     (:subscription-end   user))
+       (cond
+         (= (:type user) :usuario)  (can-usuario-access?  content))))

@@ -1,3 +1,5 @@
+(ns takehome.core)
+
 (defn can-usuario-access? [content]
   (case (:type content)
     :series true

@@ -148,14 +148,14 @@
       ; podcast released at 2020-03-29
       (is (= false (sub/can-access? patriota-2018 democracia-em-debate)))
       (is (= false (sub/can-access? patriota-2019 democracia-em-debate)))
-      (is (= false (sub/can-access? patriota-2020 democracia-em-debate)))
+      (is (= true (sub/can-access? patriota-2020 democracia-em-debate)))
       ; debate released at 2020-03-29
       (is (= false (sub/can-access? patriota-2018 qual-o-limite-do-respeito)))
       (is (= false (sub/can-access? patriota-2019 qual-o-limite-do-respeito)))
-      (is (= false (sub/can-access? patriota-2020 qual-o-limite-do-respeito)))
+      (is (= true (sub/can-access? patriota-2020 qual-o-limite-do-respeito)))
       ; interview released at 2019-11-16
       (is (= false (sub/can-access? patriota-2018 congresso-rafael-nogueira)))
-      (is (= false (sub/can-access? patriota-2019 congresso-rafael-nogueira)))
+      (is (= true (sub/can-access? patriota-2019 congresso-rafael-nogueira)))
       (is (= false (sub/can-access? patriota-2020 congresso-rafael-nogueira)))
       ; course released at 2019-01-31
       (is (= false (sub/can-access? patriota-2018 o-que-é-capitalismo)))

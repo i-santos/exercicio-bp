@@ -195,7 +195,7 @@
       (is (= false (sub/can-access? premium-2020 congresso-rafael-nogueira)))
       ; course released at 2019-01-31
       (is (= false (sub/can-access? premium-2018 o-que-é-capitalismo)))
-      (is (= false (sub/can-access? premium-2019 o-que-é-capitalismo)))
+      (is (= true (sub/can-access? premium-2019 o-que-é-capitalismo)))
       (is (= false (sub/can-access? premium-2020 o-que-é-capitalismo)))
       ; patron released at 2020-08-10
       (is (= false (sub/can-access? premium-2018 relatorio-mecenas)))

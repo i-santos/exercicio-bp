@@ -164,4 +164,31 @@
       ; patron released at 2020-08-10
       (is (= false (sub/can-access? patriota-2018 relatorio-mecenas)))
       (is (= false (sub/can-access? patriota-2019 relatorio-mecenas)))
-      (is (= false (sub/can-access? patriota-2020 relatorio-mecenas))))))
+      (is (= false (sub/can-access? patriota-2020 relatorio-mecenas)))))
+
+  (deftest test-can-premium-instance-access?
+    (testing "if an instance of 'premium' can access specific content"
+      ; series released at 2019-07-24
+      (is (= false (sub/can-access? premium-2018 brasil-entre-armas-e-livros)))
+      (is (= true  (sub/can-access? premium-2019 brasil-entre-armas-e-livros)))
+      (is (= false (sub/can-access? premium-2020 brasil-entre-armas-e-livros)))
+      ; podcast released at 2020-03-29
+      (is (= false (sub/can-access? premium-2018 democracia-em-debate)))
+      (is (= false (sub/can-access? premium-2019 democracia-em-debate)))
+      (is (= true (sub/can-access? premium-2020 democracia-em-debate)))
+      ; debate released at 2020-03-29
+      (is (= false (sub/can-access? premium-2018 qual-o-limite-do-respeito)))
+      (is (= false (sub/can-access? premium-2019 qual-o-limite-do-respeito)))
+      (is (= true (sub/can-access? premium-2020 qual-o-limite-do-respeito)))
+      ; interview released at 2019-11-16
+      (is (= false (sub/can-access? premium-2018 congresso-rafael-nogueira)))
+      (is (= true (sub/can-access? premium-2019 congresso-rafael-nogueira)))
+      (is (= false (sub/can-access? premium-2020 congresso-rafael-nogueira)))
+      ; course released at 2019-01-31
+      (is (= false (sub/can-access? premium-2018 o-que-é-capitalismo)))
+      (is (= false (sub/can-access? premium-2019 o-que-é-capitalismo)))
+      (is (= false (sub/can-access? premium-2020 o-que-é-capitalismo)))
+      ; patron released at 2020-08-10
+      (is (= false (sub/can-access? premium-2018 relatorio-mecenas)))
+      (is (= false (sub/can-access? premium-2019 relatorio-mecenas)))
+      (is (= false (sub/can-access? premium-2020 relatorio-mecenas))))))

@@ -3,7 +3,17 @@
             [java-time :as time]
             [takehome.core :as sub]))
 
-(let [; série
+(let [; usuários
+      usuario-2018 {:type               :usuario
+                    :subscription-start (time/local-date-time "2018-01-01T00:00:00.000")
+                    :subscription-end   (time/local-date-time "2019-01-01T00:00:00.000")}
+      usuario-2019 {:type               :usuario
+                    :subscription-start (time/local-date-time "2019-01-01T00:00:00.000")
+                    :subscription-end   (time/local-date-time "2020-01-01T00:00:00.000")}
+      usuario-2020 {:type               :usuario
+                    :subscription-start (time/local-date-time "2020-01-01T00:00:00.000")
+                    :subscription-end   (time/local-date-time "2021-01-01T00:00:00.000")}
+      ; série
       brasil-entre-armas-e-livros {:type :series
                                    :name "1964: O Brasil entre Armas e Livros"
                                    :released-at (time/local-date-time "2019-07-24T20:02:34.691")}

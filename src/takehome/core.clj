@@ -36,3 +36,6 @@
          (= (:type user) :patriota) (can-patriota-access? content)
          (= (:type user) :premium)  (can-premium-access?  content)
          (= (:type user) :mecenas)  (can-mecenas-access?  content))))
+
+(defn get-usuario-content-list [content]
+  (filter (fn [c] (= true (can-usuario-access? c))) content))

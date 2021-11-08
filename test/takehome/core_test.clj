@@ -63,7 +63,9 @@
       ; relatório mecenas
       relatorio-mecenas {:type :patron
                          :name "Relatório Mecenas"
-                         :released-at (time/local-date-time "2020-08-10T20:00:00.656")}]
+                         :released-at (time/local-date-time "2020-08-10T20:00:00.656")}
+      ; todos conteúdos
+      content-database (read-string (slurp "resources/content-database.edn"))]
 
   ;;; ROLE: usuario
   (deftest test-can-usuario-role-access?
@@ -236,4 +238,10 @@
       ; patron released at 2020-08-10
       (is (= false (sub/can-access? mecenas-2018 relatorio-mecenas)))
       (is (= false (sub/can-access? mecenas-2019 relatorio-mecenas)))
-      (is (= true (sub/can-access? mecenas-2020 relatorio-mecenas))))))
+      (is (= true (sub/can-access? mecenas-2020 relatorio-mecenas)))))
+
+  (deftest test-get-usuario-role-content-list
+    (testing "how many content items usuario can access"
+      (is (= 0 (count (sub/get-content-list usuario-2018 content-database))))
+      (is (= 8 (count (sub/get-content-list usuario-2019 content-database))))
+      (is (= 1 (count (sub/get-content-list usuario-2020 content-database)))))))

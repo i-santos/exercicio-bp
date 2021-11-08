@@ -244,4 +244,10 @@
     (testing "how many content items usuario can access"
       (is (= 0 (count (sub/get-content-list usuario-2018 content-database))))
       (is (= 8 (count (sub/get-content-list usuario-2019 content-database))))
-      (is (= 1 (count (sub/get-content-list usuario-2020 content-database)))))))
+      (is (= 1 (count (sub/get-content-list usuario-2020 content-database))))))
+
+  (deftest test-get-patriota-role-content-list
+    (testing "how many content items patriota can access"
+      (is (= 3 (count (sub/get-content-list patriota-2018 content-database))))
+      (is (= 15 (count (sub/get-content-list patriota-2019 content-database))))
+      (is (= 14 (count (sub/get-content-list patriota-2020 content-database)))))))

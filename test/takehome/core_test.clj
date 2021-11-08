@@ -256,4 +256,10 @@
     (testing "how many content items premium can access"
       (is (= 7 (count (sub/get-content-list premium-2018 content-database))))
       (is (= 31 (count (sub/get-content-list premium-2019 content-database))))
-      (is (= 18 (count (sub/get-content-list premium-2020 content-database)))))))
+      (is (= 18 (count (sub/get-content-list premium-2020 content-database))))))
+
+  (deftest test-get-mecenas-role-content-list
+    (testing "how many content items mecenas can access"
+      (is (= 7 (count (sub/get-content-list mecenas-2018 content-database))))
+      (is (= 31 (count (sub/get-content-list mecenas-2019 content-database))))
+      (is (= 19 (count (sub/get-content-list mecenas-2020 content-database)))))))

@@ -250,4 +250,10 @@
     (testing "how many content items patriota can access"
       (is (= 3 (count (sub/get-content-list patriota-2018 content-database))))
       (is (= 15 (count (sub/get-content-list patriota-2019 content-database))))
-      (is (= 14 (count (sub/get-content-list patriota-2020 content-database)))))))
+      (is (= 14 (count (sub/get-content-list patriota-2020 content-database))))))
+
+  (deftest test-get-premium-role-content-list
+    (testing "how many content items premium can access"
+      (is (= 7 (count (sub/get-content-list premium-2018 content-database))))
+      (is (= 31 (count (sub/get-content-list premium-2019 content-database))))
+      (is (= 18 (count (sub/get-content-list premium-2020 content-database)))))))

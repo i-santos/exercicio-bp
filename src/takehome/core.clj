@@ -28,14 +28,14 @@
         false)))
 
 (defn can-access? [user content]
-  (and (time/before? (:subscription-start user)
-                     (:released-at        content)
-                     (:subscription-end   user))
+  (and (time/before? (time/local-date-time (:subscription-start user))
+                     (time/local-date-time (:released-at        content))
+                     (time/local-date-time (:subscription-end   user)))
        (cond
          (= (:type user) :usuario)  (can-usuario-access?  content)
          (= (:type user) :patriota) (can-patriota-access? content)
          (= (:type user) :premium)  (can-premium-access?  content)
          (= (:type user) :mecenas)  (can-mecenas-access?  content))))
 
-(defn get-usuario-content-list [content]
-  (filter (fn [c] (= true (can-usuario-access? c))) content))
+(defn get-content-list [user content]
+  (filter (fn [c] (= true (can-access? user c))) content))
